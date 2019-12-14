@@ -1,9 +1,18 @@
 import tensorflow as tf
 import tensorflow.keras.backend as K
-from tensorflow.keras.utils import conv_utils
 from tensorflow.keras.engine.topology import Layer
 from tensorflow.keras.engine import InputSpec
 
+# From https://stackoverflow.com/questions/53442190/importerror-cannot-import-name-normalize-data-format
+def normalize_data_format(value):
+    if value is None:
+        value = K.image_data_format()
+    data_format = value.lower()
+    if data_format not in {'channels_first', 'channels_last'}:
+        raise ValueError('The `data_format` argument must be one of '
+                         '"channels_first", "channels_last". Received: ' +
+                         str(value))
+    return data_format
 
 class BilinearUpSampling2D(Layer):
     """Upsampling2D with bilinear interpolation."""
@@ -50,7 +59,7 @@ class CroppingLike2D(Layer):
 
         """
         super(CroppingLike2D, self).__init__(**kwargs)
-        self.data_format = conv_utils.normalize_data_format(data_format)
+        self.data_format = normalize_data_format(data_format)
         self.target_shape = target_shape
         if offset is None or offset == 'centered':
             self.offset = 'centered'
