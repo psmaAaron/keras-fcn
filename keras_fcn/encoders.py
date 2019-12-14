@@ -6,7 +6,7 @@ import tensorflow.keras
 import tensorflow.keras.backend as K
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.utils import get_file, layer_utils
+from tensorflow.keras.utils import get_file, convert_all_kernels_in_model
 
 from keras_fcn.blocks import (
     vgg_conv,
@@ -73,7 +73,7 @@ class Encoder(Model):
                 cache_subdir='models')
             layer_names = load_weights(self, weights_path)
             if K.image_data_format() == 'channels_first':
-                layer_utils.convert_all_kernels_in_model(self)
+                convert_all_kernels_in_model(self)
 
         # Freezing basenet weights
         if trainable is False:
