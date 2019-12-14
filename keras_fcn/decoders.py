@@ -2,13 +2,7 @@ import tensorflow.keras
 import tensorflow.keras.backend as K
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import (
-    Input
-)
-
-from tensorflow.keras.layers.convolutional import (
-    Conv2D
-)
+from tensorflow.keras.layers import Input, Conv2D
 
 from keras_fcn.layers import CroppingLike2D
 from keras_fcn.blocks import (
