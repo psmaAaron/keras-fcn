@@ -1,3 +1,4 @@
+import tensorflow as tf
 import tensorflow.keras.backend as K
 import keras_fcn.backend as K1
 from tensorflow.keras.utils import conv_utils
@@ -31,8 +32,8 @@ class BilinearUpSampling2D(Layer):
                     self.target_size[0], self.target_size[1])
 
     def call(self, inputs):
-        return K1.resize_images(inputs, size=self.target_size,
-                                method='bilinear')
+        new_size = tf.convert_to_tensor(self.target_size, dtype=tf.int32)
+        return tf.image.resize_images(inputs, new_size)
 
     def get_config(self):
         config = {'target_shape': self.target_shape,
