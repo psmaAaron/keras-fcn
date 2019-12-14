@@ -1,6 +1,5 @@
 import tensorflow as tf
-import tensorflow.keras.backend as K
-import keras_fcn.backend as K1
+import tensorflow.keras.backend as *args, **kwargs
 from tensorflow.keras.utils import conv_utils
 from tensorflow.keras.engine.topology import Layer
 from tensorflow.keras.engine import InputSpec
