@@ -1,4 +1,4 @@
-import keras.backend as K
+import tensorflow.keras.backend as K
 import keras_fcn.backend as K1
 from tensorflow.keras.utils import conv_utils
 from tensorflow.keras.engine.topology import Layer

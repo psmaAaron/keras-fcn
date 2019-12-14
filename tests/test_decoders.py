@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-import keras.backend as K
+import tensorflow.keras.backend as K
 from tensorflow.keras.layers import Input
 from keras_fcn.decoders import (
     Decoder,

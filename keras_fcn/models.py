@@ -3,9 +3,9 @@ from __future__ import (
     absolute_import,
     unicode_literals
 )
-import keras
+import tensorflow.keras
 import tensorflow as tf
-import keras.backend as K
+import tensorflow.keras.backend as K
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Flatten, Activation, Reshape
 

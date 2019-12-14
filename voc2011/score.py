@@ -1,6 +1,6 @@
 """Deprecated score metrics."""
 import numpy as np
-import keras.backend as K
+import tensorflow.keras.backend as K
 
 
 def get_confusion(a, b, n):

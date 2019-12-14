@@ -1,5 +1,5 @@
-import keras
-import keras.backend as K
+import tensorflow.keras
+import tensorflow.keras.backend as K
 
 
 def mean_categorical_crossentropy(y_true, y_pred):

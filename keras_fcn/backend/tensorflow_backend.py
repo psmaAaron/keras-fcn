@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-import keras.backend as K
+import tensorflow.keras.backend as K
 
 
 def resize_images(x, size, method='bilinear'):

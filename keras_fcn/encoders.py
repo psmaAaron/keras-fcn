@@ -2,8 +2,8 @@ from __future__ import (
     absolute_import,
     unicode_literals
 )
-import keras
-import keras.backend as K
+import tensorflow.keras
+import tensorflow.keras.backend as K
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils.data_utils import get_file

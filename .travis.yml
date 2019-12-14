@@ -50,7 +50,7 @@ install:
 # command to run tests
 script:
   # run keras backend init to initialize backend config
-  - python -c "import keras.backend"
+  - python -c "import tensorflow.keras.backend"
   # create dataset directory to avoid concurrent directory creation at runtime
   - mkdir ~/.keras/datasets
   # set up keras backend

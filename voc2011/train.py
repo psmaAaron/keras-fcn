@@ -2,8 +2,8 @@ import os
 import yaml
 import datetime
 import numpy as np
-import keras
-import keras.backend as K
+import tensorflow.keras
+import tensorflow.keras.backend as K
 import tensorflow as tf
 from keras_fcn import FCN
 from voc_generator import PascalVocGenerator, ImageSetLoader
