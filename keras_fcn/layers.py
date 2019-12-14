@@ -1,6 +1,6 @@
 import tensorflow as tf
 import tensorflow.keras.backend as K
-from tensorflow.keras.engine.topology import Layer
+from tensorflow.keras.layers import Layer
 from tensorflow.keras.engine import InputSpec
 
 # From https://stackoverflow.com/questions/53442190/importerror-cannot-import-name-normalize-data-format
