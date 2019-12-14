@@ -6,8 +6,7 @@ import tensorflow.keras
 import tensorflow.keras.backend as K
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.utils.data_utils import get_file
-from tensorflow.keras.utils import layer_utils
+from tensorflow.keras.utils import get_file, layer_utils
 
 from keras_fcn.blocks import (
     vgg_conv,
