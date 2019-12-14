@@ -7,7 +7,7 @@ import keras.backend as K
 import tensorflow as tf
 from keras_fcn import FCN
 from voc_generator import PascalVocGenerator, ImageSetLoader
-from keras.callbacks import (
+from tensorflow.keras.callbacks import (
     ReduceLROnPlateau,
     CSVLogger,
     EarlyStopping,

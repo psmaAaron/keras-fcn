@@ -2,7 +2,7 @@ import pytest
 import numpy as np
 import keras.backend as K
 from keras_fcn.layers import CroppingLike2D, BilinearUpSampling2D
-from keras.utils.test_utils import keras_test
+from tensorflow.keras.utils.test_utils import keras_test
 
 
 @keras_test

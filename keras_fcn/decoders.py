@@ -1,12 +1,12 @@
 import keras
 import keras.backend as K
 
-from keras.models import Model
-from keras.layers import (
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import (
     Input
 )
 
-from keras.layers.convolutional import (
+from tensorflow.keras.layers.convolutional import (
     Conv2D
 )
 

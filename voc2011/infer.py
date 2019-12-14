@@ -1,7 +1,7 @@
 import numpy as np
 import keras
 import keras.backend as K
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from voc_generator import PascalVocGenerator, ImageSetLoader
 from keras_fcn.layers import BilinearUpSampling2D
 

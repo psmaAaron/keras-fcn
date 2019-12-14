@@ -1,7 +1,7 @@
 """Test FCN."""
 import numpy as np
 from keras_fcn import FCN
-from keras import backend as K
+from tensorflow.keras import backend as K
 
 
 def is_same_shape(shape, expected_shape, data_format=None):

@@ -1,14 +1,14 @@
 import pytest
 import numpy as np
 import keras.backend as K
-from keras.layers import Input
+from tensorflow.keras.layers import Input
 from keras_fcn.decoders import (
     Decoder,
     VGGDecoder,
     VGGUpsampler
 )
 
-from keras.utils.test_utils import keras_test
+from tensorflow.keras.utils.test_utils import keras_test
 
 
 def test_decoder():

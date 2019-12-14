@@ -1,8 +1,8 @@
 import keras.backend as K
 import keras_fcn.backend as K1
-from keras.utils import conv_utils
-from keras.engine.topology import Layer
-from keras.engine import InputSpec
+from tensorflow.keras.utils import conv_utils
+from tensorflow.keras.engine.topology import Layer
+from tensorflow.keras.engine import InputSpec
 
 
 class BilinearUpSampling2D(Layer):

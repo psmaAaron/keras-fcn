@@ -5,9 +5,9 @@ from __future__ import (
 import keras
 import keras.backend as K
 
-from keras.models import Model
-from keras.utils.data_utils import get_file
-from keras.utils import layer_utils
+from tensorflow.keras.models import Model
+from tensorflow.keras.utils.data_utils import get_file
+from tensorflow.keras.utils import layer_utils
 
 from keras_fcn.blocks import (
     vgg_conv,
@@ -24,7 +24,7 @@ class Encoder(Model):
     :return A Keras Model with outputs including the output of
     each block except the final conv block (using the encoder's top instead)
 
-    >>> from keras.layers import Input
+    >>> from tensorflow.keras.layers import Input
     >>> from keras_fcn.encoders import Encoder
     >>> from keras_fcn.blocks import (vgg_conv, vgg_fc)
     >>> inputs = Input(shape=(224, 224, 3))
@@ -95,7 +95,7 @@ class VGGEncoder(Encoder):
     each block except `pool5` (using drop7 from `pool5` instead)
 
     >>> from keras_fcn.encoders import VGGEncoder
-    >>> from keras.layers import Input
+    >>> from tensorflow.keras.layers import Input
     >>> x = Input(shape=(224, 224, 3))
     >>> encoder = VGGEncoder(Input(x),
     >>>                  filters=[64, 128, 256, 512, 512],
@@ -128,7 +128,7 @@ class VGG16(VGGEncoder):
     """A VGG16 feature encoder.
 
     >>> from keras_fcn.encoders import VGG16
-    >>> from keras.layers import Input
+    >>> from tensorflow.keras.layers import Input
     >>> x = Input(shape=(224, 224, 3))
     >>> encoder = VGG16(x)
     >>> feat_pyramid = encoder.outputs
@@ -154,7 +154,7 @@ class VGG19(VGGEncoder):
     """VGG19 net.
 
     >>> from keras_fcn.encoders import VGG19
-    >>> from keras.layers import Input
+    >>> from tensorflow.keras.layers import Input
     >>> x = Input(shape=(224, 224, 3))
     >>> encoder = VGG19(x)
     >>> feat_pyramids = encoder.outputs

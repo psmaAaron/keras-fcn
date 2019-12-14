@@ -7,9 +7,8 @@ setuptools.setup(
     author_email="daniel.jihong.ju@gmail.com",
     extras_require={
         "test": [
-            'keras>=2.0.0',
             "pandas==0.19.2",
-            "tensorflow",
+            "tensorflow>=2.0.0",
             "codecov",
             "mock",
             "pytest",

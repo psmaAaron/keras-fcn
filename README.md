@@ -58,8 +58,8 @@ fcn_vgg19.fit(X_train, y_train, batch_size=1)
 ### Custom FCN (VGG16 as an example)
 
 ```python
-from keras.layers import Input
-from keras.models import Model
+from tensorflow.keras.layers import Input
+from tensorflow.keras.models import Model
 from keras_fcn.encoders import Encoder
 from keras_fcn.decoders import VGGUpsampler
 from keras_fcn.blocks import (vgg_conv, vgg_fc)

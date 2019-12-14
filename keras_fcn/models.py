@@ -6,8 +6,8 @@ from __future__ import (
 import keras
 import tensorflow as tf
 import keras.backend as K
-from keras.models import Model
-from keras.layers import Input, Flatten, Activation, Reshape
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Flatten, Activation, Reshape
 
 
 from keras_fcn.encoders import VGG16, VGG19

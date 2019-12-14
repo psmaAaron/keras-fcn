@@ -1,6 +1,6 @@
 import numpy as np
 import keras.backend as K
-from keras.layers import Input
+from tensorflow.keras.layers import Input
 from keras_fcn.blocks import (
     vgg_conv,
     vgg_fc,

@@ -1,16 +1,16 @@
 import keras.backend as K
-from keras.layers import (
+from tensorflow.keras.layers import (
     Dropout,
     Lambda
 )
-from keras.layers.convolutional import (
+from tensorflow.keras.layers.convolutional import (
     Conv2D,
     Conv2DTranspose,
     MaxPooling2D,
     ZeroPadding2D
 )
-from keras.layers.merge import add
-from keras.regularizers import l2
+from tensorflow.keras.layers.merge import add
+from tensorflow.keras.regularizers import l2
 from keras_fcn.layers import CroppingLike2D, BilinearUpSampling2D
 
 

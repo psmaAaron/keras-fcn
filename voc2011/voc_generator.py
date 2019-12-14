@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 import os
 import numpy as np
-from keras import backend as K
-from keras.utils.np_utils import to_categorical
-from keras.preprocessing.image import (
+from tensorflow.keras import backend as K
+from tensorflow.keras.utils.np_utils import to_categorical
+from tensorflow.keras.preprocessing.image import (
     ImageDataGenerator,
     Iterator,
     load_img,
